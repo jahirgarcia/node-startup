@@ -4,7 +4,10 @@
   "description": "REST api startup template con nodejs",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec node_modules/.bin/babel-node src/server.js",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && babel src --out-dir dist"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/jahirgarcia/node-startup/issues"
   },
-  "homepage": "https://github.com/jahirgarcia/node-startup#readme"
+  "homepage": "https://github.com/jahirgarcia/node-startup#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/node": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "nodemon": "^2.0.15"
+  }
 }

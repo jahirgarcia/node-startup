@@ -1,7 +1,7 @@
-const { createServer } = require('http');
+import { createServer } from 'http';
 
 const server = createServer((req, res) => {
-    res.end('Hello World');
+  res.end('Hello World!');
 });
 
 const PORT = process.env.PORT || 8080;
