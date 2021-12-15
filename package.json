@@ -1,0 +1,19 @@
+{
+  "name": "node-startup",
+  "version": "1.0.0",
+  "description": "REST api startup template con nodejs",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jahirgarcia/node-startup.git"
+  },
+  "author": "Jahir García",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jahirgarcia/node-startup/issues"
+  },
+  "homepage": "https://github.com/jahirgarcia/node-startup#readme"
+}
