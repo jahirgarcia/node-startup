@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --exec node_modules/.bin/babel-node src/server.js",
     "clean": "rm -rf dist",
-    "build": "npm run clean && babel src --out-dir dist"
+    "build": "npm run clean && babel src --out-dir dist",
+    "prepare": "husky install",
+    "lint:staged": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,9 @@
     "@babel/core": "^7.16.5",
     "@babel/node": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
-    "nodemon": "^2.0.15"
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
   }
 }
